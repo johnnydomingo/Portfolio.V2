@@ -1,6 +1,6 @@
 import Spline from '@splinetool/react-spline';
 
-export default function App() {
+export default function SplineDesign () {
   return (
     <section id="home">
     <div>

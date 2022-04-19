@@ -1,19 +1,32 @@
 import Layout from "./Components/Layout";
 import Footer from "./Components/Footer";
 import Landing from "./Screens/Landing";
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./CSS/App.css";
 
-const App = () => {
+export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 8500);
+  }, []);
+
   return (
-    <div className="App">
-      <Layout>
-        <Landing />
-        <Footer />
-      </Layout>
-    </div>
+    <>
+      {loading === false ? (
+        <div className="App">
+        <Layout>
+          <Landing />
+          <Footer />
+        </Layout>
+        </div>
+      ) : (
+          "Loading..."
+  )}
+    </>
   );
 };
 
-export default App;
 

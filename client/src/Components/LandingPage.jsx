@@ -1,8 +1,8 @@
 import "../CSS/LandingPage.css";
 import Spline from "./Spline";
-import TextScramble from "./TextScramble";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import TextScramble from "./TextScramble";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 const LandingPage = () => {
