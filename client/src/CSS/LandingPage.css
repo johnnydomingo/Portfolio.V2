@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+.me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1c1d;
+  z-index: 1;
+  /* background-image:linear-gradient(to top, #264653db, #646864cc), url("../Assets/images/me.jpg"); */
+  position: relative;
+  /* overflow: hidden; */
+  background-attachment: fixed;
+  background-size: cover;
+  /* opacity:0.8; */
+  padding-bottom: 35vh;
+}
+
+.name{
+  /* font-size: 48px;
+  font-weight: 900; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36vh;
+  z-index: 1;
+  /* font-size: 67px; */
+}
+h2.name {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  text-shadow: 1px 0 0 #1b3a4b, 0 -1px 0 #1b3a4b, 0 1px 0 #1b3a4b, -1px 0 0 #1b3a4b;
+  /* font-style: bolder; */
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  /* color: white; */
+  font-size: 45px;
+  margin-top: 0px;
+}
+#git-icon{
+  padding: 2rem;
+  /* color: white; */
+}
+.social-link {
+  text-decoration: none;
+  color: #f1faee;
+  z-index: 1;
+}
+#li-icon{
+  padding: 2rem;
+}
+
+.hover:hover{
+  /* color: #a8dadc; */
+  /* color: #e63946; */
+  /* color: #E8DAB2; */
+  color: #0a9396;
+}
+@media only screen and (max-width: 414px) {
+  h2.name{
+    font-size: 34px;
+    color: white;
+    
+  }
+  .me{
+    background-attachment: inherit;
+    /* background-size: cover; */
+    background-position: center;
+    max-width: 100%;
+    /* background-image: scale-to-fit; */
+    height: 75vh;
+    /* margin-bottom: 50vh; */
+    
+  }
+}

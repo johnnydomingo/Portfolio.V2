@@ -1,0 +1,55 @@
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 300;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger-icon > div {
+  width: 2rem;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.burger-icon.open > div {
+  background-color: #ffffff;
+}
+
+.bar-1 {
+  transform: rotate(0);
+}
+
+.open .bar-1 {
+  transform: rotate(45deg);
+}
+
+.bar-2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.open .bar-2 {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+
+.bar-3 {
+  transform: rotate(0);
+}
+
+.open .bar-3 {
+  transform: rotate(-45deg);
+}
