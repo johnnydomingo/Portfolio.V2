@@ -10,7 +10,6 @@ export default function Burger({ open, setOpen }) {
       <div className="bar-1" />
       <div className="bar-2" />
       <div className="bar-3" />
-      {/* <Nav /> */}
     </div>
   );
 }

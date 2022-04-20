@@ -1,7 +1,7 @@
 // import LandingPage from "../Components/LandingPage";
 import About from "../Components/About";
 import Projects from "../Components/Projects";
-import Spline from "../Components/Spline";
+// import Spline from "../Components/Spline";
 import "../CSS/Landing.css";
 
 const Landing = () => {
