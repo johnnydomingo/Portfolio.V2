@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 .work{
   font-size: 30px;
@@ -77,6 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
   /* margin: 0 0 5vh 0; */
   /* background-color: #bebebed2; */
   border-radius: 5px;
@@ -109,6 +111,7 @@
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
+  pointer-events: none;
   height: 100%;
   width: 99%;
   left: 0;
@@ -123,11 +126,13 @@
 .content-overlay{
   padding-right: 5px;
   border-radius: 5px;
+  pointer-events: none;
   
 }
 
 .content:hover .content-overlay{
   opacity: 1;
+  pointer-events: none;
 }
 
 .content-image{
@@ -157,6 +162,7 @@
   top: 50%;
   left: 50%;
   opacity: 1;
+  pointer-events: none;
 }
 
 .content-details h3{
@@ -181,6 +187,7 @@
 }
 #git:hover{
   color: #83c5be;
+  pointer-events: none;
 }
 .fadeIn-bottom{
   top: 55%;

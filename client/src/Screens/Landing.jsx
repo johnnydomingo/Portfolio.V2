@@ -9,7 +9,7 @@ const Landing = () => {
     <div className="home">
       <div>
         {/* <LandingPage /> */}
-        <Spline />
+        {/* <Spline /> */}
       </div>
       <div className="about-section">
         <About />
