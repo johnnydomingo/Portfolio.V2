@@ -4,7 +4,7 @@ export default function SplineDesign () {
   return (
     <section id="home">
     <div>
-	  <Spline scene="https://draft.spline.design/nX4aJykTunYBPcEx/scene.spline" />
+    <Spline scene="https://draft.spline.design/2Mr94mZ7psLfI-lO/scene.spline" />
 	</div>
     </section>
   );

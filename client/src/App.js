@@ -1,6 +1,7 @@
 import Layout from "./Components/Layout";
 import Footer from "./Components/Footer";
 import Landing from "./Screens/Landing";
+// import Spline from "./Components/Spline";
 import React, {useEffect, useState} from 'react';
 import "./CSS/App.css";
 
@@ -10,14 +11,15 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 8500);
+    }, 10000);
   }, []);
 
   return (
     <>
       {loading === false ? (
         <div className="App">
-        <Layout>
+          <Layout>
+          {/* <Spline /> */}
           <Landing />
           <Footer />
         </Layout>
