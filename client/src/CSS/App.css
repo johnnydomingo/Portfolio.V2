@@ -8,6 +8,7 @@ body {
   background-color: #1b1c1d;
   color: white;
   cursor: none;
+  scroll-behavior: smooth;
 }
 div{
   margin-bottom: -12px;

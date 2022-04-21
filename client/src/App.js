@@ -1,20 +1,35 @@
 import Layout from "./Components/Layout";
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
-import Landing from "./Screens/Landing";
+import ScreenContents from "./Components/ScreenContents"
+// import Landing from "./Screens/Landing";
 // import Spline from "./Components/Spline";
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./CSS/App.css";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
+  // const [components, setComponents] = useState(["ScreenContents"]);
+  // const [componentNames, setComponentNames] = useState(["ScreenContents"]);
+  const [visible, setVisible] = useState(false);
+  // const [showResults, setShowResults] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
+  
+  // function addComponent() {
+
+  //   if (componentNames.length > 0) {
+  //     setComponents([...components, componentNames[0]]);
+  //     componentNames.splice(0,1)
+  //   }
+    
+  // }
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, []);
 
   useEffect(() => {
     const $bigBall = document.querySelector(".cursor__ball--big");
@@ -29,6 +44,7 @@ export default function App() {
       gsap.to($smallBall, { duration: 0.01, x: e.pageX - 5, y: e.pageY - 7 });
     }
   }, []);
+  
 
   return (
       <div className="App">
@@ -44,12 +60,12 @@ export default function App() {
           </svg>
         </div>
       </div>
-        {/* <Spline /> */}
-        {/* <LandingPage /> */}
-        <Layout>
-        <LandingPage />
-          {/* <Spline /> */}
-          {/* <Landing /> */}
+      <Layout>
+        <div>
+        <LandingPage onClick={() => setVisible(!visible)}>{visible ? 'Hide' : 'Show'}</LandingPage>
+          
+          <div style={{display: visible ? 'block' : 'none'}}><ScreenContents/></div>
+        </div>
           <Footer />
         </Layout>
       </div>

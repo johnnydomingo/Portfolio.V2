@@ -1,22 +1,15 @@
-// import LandingPage from "../Components/LandingPage";
-import About from "../Components/About";
-import Projects from "../Components/Projects";
+import LandingPage from "../Components/LandingPage";
+import ScreenContents from "../Components/ScreenContents";
+import React from 'react';
 // import Spline from "../Components/Spline";
 import "../CSS/Landing.css";
 
-const Landing = () => {
+export default function Landing() {
   return (
     <div className="home">
-      <div>
-        {/* <LandingPage /> */}
-        {/* <Spline /> */}
-      </div>
-      <div className="about-section">
-        <About />
-      </div>
-      <Projects />
-      <div></div>
+      <LandingPage />
+      <ScreenContents />
     </div>
   );
 };
-export default Landing;
+

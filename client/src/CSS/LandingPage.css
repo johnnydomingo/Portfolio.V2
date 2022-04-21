@@ -12,11 +12,14 @@
   position: absolute;
   top: 90%;
   transform: translateX(-50%) translateY(-50%);
-  transition: transform 0.1s;
   width: 30px;
 }
+
+
 #arrow{
   transform: rotate(90deg);
+  /* transition: 0.5s ease-out all;
+  behavior: smooth; */
 }
 .arrow-top, .arrow-bottom {
   background-color: rgb(253, 253, 253);
